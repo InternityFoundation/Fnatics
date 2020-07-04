@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="row justify-content-center-around">
+  <header class="m-3">
+    <h2>Skill Quiz</h2>
+    <hr>
+    <p>Just attempt as many questions as you can.</p>
+    <small>Tip - Solving questions with high level gives you high selection chances.</small>
+  </header>
+  {% for q in questions %}
+  <div class="accordion mb-3 mt-3" id="accordionExample">
+    <div class="card"  style="width: 60rem;">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ q.id }}" aria-expanded="true" aria-controls="collapse{{ q.id }}">
+            Question on {{ q.topic }}  -  Level {{ q.level }}
+          </button>
+        </h2>
+      </div>
+
+      <div id="collapse{{ q.id }}" class="collapse show" aria-labelledby="heading{{ q.id }}" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>
+            {{ q.question }}
+          </p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              {{ q.option1 }}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              {{ q.option2 }}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              {{ q.option3 }}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              {{ q.option4 }}
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor%}
+  <div class="form-check m-4">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Are you sure you want to submit now?
+    </label>
+  </div>
+  <button type="button" class="btn btn-primary btn-lg btn-block">Submit Quiz</button>
+
+</div>
+
+  {% endblock %}

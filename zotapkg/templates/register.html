@@ -1,0 +1,106 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="text-center mt-4 animated bounceInDown">
+  <h2>{{ title }}</h2>
+  <hr>
+</div>
+<div class="row justify-content-center-around">
+  <form action="" method="POST">
+    {{ form.hidden_tag() }}
+    <fieldset class="form-group">
+      <div class="form-group form-row">
+        <div class="col-md-6">
+          {{ form.name.label(class='form-control-label') }}
+          {{ form.name(class='form-control') }}
+          <div class="invalid-feedback d-block">
+            {% if form.name.errors %}
+            {% for error in form.name.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-6">
+          {{ form.email.label(class='form-control-label') }}
+          {{ form.email(class='form-control') }}
+          <div class="invalid-feedback d-block">
+            {% if form.email.errors %}
+            {% for error in form.email.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-6">
+          {{ form.phone.label(class='form-control-label') }}
+          {{ form.phone(class='form-control') }}
+          <div class="invalid-feedback d-block">
+            {% if form.phone.errors %}
+            {% for error in form.phone.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-6">
+          {{ form.whatsapp_num.label(class='form-control-label') }}
+          {{ form.whatsapp_num(class='form-control') }}
+          <div class="invalid-feedback d-block">
+            {% if form.whatsapp_num.errors %}
+            {% for error in form.whatsapp_num.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-6">
+          {{ form.gender.label(class='form-control-label') }}
+          {{ form.gender(class='form-control') }}
+          <div class="invalid-feedback d-block">
+            {% if form.gender.errors %}
+            {% for error in form.gender.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-6">
+          {{ form.marital_status.label(class='form-control-label') }}
+          {{ form.marital_status(class='form-control') }}
+          <div class="invalid-feedback d-block">
+            {% if form.marital_status.errors %}
+            {% for error in form.marital_status.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-6">
+          {{ form.lang_known.label(class='form-control-label') }}
+          {{ form.lang_known(class='form-control') }}
+          <div class="invalid-feedback d-block">
+            {% if form.lang_known.errors %}
+            {% for error in form.lang_known.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-6">
+          {{ form.city.label(class='form-control-label') }}
+          {{ form.city(class='form-control') }}
+          <div class="invalid-feedback d-block">
+            {% if form.city.errors %}
+            {% for error in form.city.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+    </fieldset>
+    <div class="form-group px-2">
+      {{ form.submit(class='btn btn-info btn-block mx-auto') }}
+    </div>
+  </form>
+</div>
+{% endblock %}

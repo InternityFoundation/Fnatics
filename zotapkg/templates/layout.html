@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+    <title>ZotaLabs | {{ title }}</title>
+    {% else %}
+    <title>ZotaLabs</title>
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">ZotaLabs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row justify-content-center animated flipInX">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <div class="col-md-4 mt-3 alert alert-{{ category }}" role="alert">
+          <span>{{ message }}</span>
+        </div>
+        {% endfor%}
+        {% endif %}
+        {% endwith %}
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          {% block content %}{% endblock content %}
+        </div>
+      </div>
+    </div>
+    <footer class="footer-copyright text-center m-5">
+      made with ❤ by fnatics team <a href="#">@repolink</a>
+    </footer>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  </body>
+</html>
