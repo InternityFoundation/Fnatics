@@ -1,38 +1,44 @@
 <html>
+<head>
+  <script src="first.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+
 <body align=center>
 
 <h2>Personal Details</h2>
 
-<form action="">
-  <label for="fname">Full name:</label><br>
-  <input type="text" id="fname" name="" value="" required><br><br>
+<form>
+  <label for="name">Full name:</label><br>
+  <input type="text" id="name" required><br><br>
   <label for="age">Age:</label><br>
-  <input type="number" id="quantity" name="" min="18" max="99" required><br><br>
+  <input type="number" id="age" min="18" max="99" required><br><br>
   <label for="mail">E-mail:</label><br>
-  <input type="email" id="mail" name="" value="" required><br><br>
-  <label for="pno">Phone number:</label><br>
-  <input type="number" id="num" name="" value="" required><br><br>
-  <label for="wno">WhatsApp number:</label><br>
-  <input type="wnumber" id="wnum" name="" value="" ><br><br>
+  <input type="email" id="mail" required><br><br>
+  <label for="mobile">Phone number:</label><br>
+  <input type="number" id="mobile" name="" value="" required><br><br>
+  <label for="whatsapp">WhatsApp number:</label><br>
+  <input type="number" id="whatsapp"><br><br>
   <label for="gender">Gender:</label><br>
   <label>
-    <input type="radio"  value="1" name="gender" />Male</label>
+    <input type="radio"  value="M" id="gender" />Male</label>
   <label>
-    <input type="radio"  value="1" name="gender" />Female</label>
+    <input type="radio"  value="F" id="gender" />Female</label>
   <label>
-    <input type="radio"  value="1" name="gender" />Other</label><br><br>
-  <label for="gender">Maritial Status:</label><br>
+    <input type="radio"  value="Others" name="gender" />Other</label><br><br>
+  <label for="mstatus">Maritial Status:</label><br>
   <label>
-    <input type="radio"  value="1" name="mstatus" />Married</label>
+    <input type="radio"  value="Y" id="mstatus" />Married</label>
   <label>
-    <input type="radio"  value="1" name="mstatus" />Unmarried</label><br><br>
+    <input type="radio"  value="N" id="mstatus" />Unmarried</label><br><br>
 
 
 
 
 
   <label for="lang">Languages known:</label><br>
-  <select name="lang">
+  <select id="lang">
   <option value="Afrikaans">English</option>
   <option value="Albanian">Albanian</option>
   <option value="Arabic">Arabic</option>
@@ -108,8 +114,8 @@
 
 </select><br><br>
 
-  <label for="country">Native Location:</label><br>
-  <select name="country">
+  <label for="native">Native Location:</label><br>
+  <select id="native">
   <option value="India">India</option>
   <option value="Afganistan">Afghanistan</option>
    <option value="Albania">Albania</option>
@@ -358,7 +364,7 @@
    <option value="Zimbabwe">Zimbabwe</option>
 </select><br><br>
 
-   <a href="create.html">Next Page</a>
+   <a href="#" onclick="create_json()">Next Page</a>
 
 </form> 
 

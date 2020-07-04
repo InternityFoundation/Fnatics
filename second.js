@@ -62,30 +62,17 @@ function create_json()
 	workHistory[0] = organisation1;
 
 
+	var Education = [];
+
+	Education[0] = {"schoolName":document.getElementById("").value,"schoolBoard":document.getElementById("").value,"duration":{"from":document.getElementById("").value,"to":document.getElementById("").value},"standard":document.getElementById("").value,"result":document.getElementById("").value};
+
+
 	var jsondata = {"Skills":skills,"workHistory":workHistory};
 	var myJSON = JSON.stringify(jsondata);
 	console.log(myJSON);
 
 
-	var 
-
-
 }
 
 
 
-
-
-
-[
-{
-"schoolName":"ABC School",
-"schoolBoard":"CBSE",
-"duration":{
-"from":"",
-"to":""
-},
-"standard":"10th",
-"result":"9.3cgpa"
-}
-]
