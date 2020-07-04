@@ -6,6 +6,7 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
+<script src="second.js"></script>
 </head>
 
 <body>
@@ -23,22 +24,22 @@ table, th, td {
   </tr>
   <tr>
     <td align=center>1</td>
-    <td align=center>Python</td>
-    <td align=center><input type="checkbox"></td>
-    <td align=center><input type="number" id="" name=""  min="1" max="3"></td>
+    <td align=center id = "name1">Python</td>
+    <td align=center><input type="checkbox" id = "skill1checkbox"></td>
+    <td align=center><input type="number" id="level1"   min="1" max="3"></td>
   </tr>
   <tr>
     <td align=center>2</td>
-    <td align=center>Java</td>
-    <td align=center><input type="checkbox"></td>
-    <td align=center><input type="number" id="" name=""  min="1" max="3"></td>
+    <td align=center id = "name2">Java</td>
+    <td align=center><input type="checkbox" id = "skill2checkbox"></td>
+    <td align=center><input type="number" id="level2"  min="1" max="3"></td>
   </tr>
   
   <tr>
     <td align=center>3</td>
-    <td align=center>Machine Learning</td>
-    <td align=center><input type="checkbox"></td>
-    <td align=center><input type="number" id="" name=""  min="1" max="3"></td>
+    <td align=center id = "name3">Machine Learning</td>
+    <td align=center><input type="checkbox" id = "skill3checkbox"></td>
+    <td align=center><input type="number" id="level3"  min="1" max="3"></td>
   </tr>
   
 </table>
@@ -104,7 +105,7 @@ table, th, td {
 </form> 
 
 
-<h4 align=center><a href="" >Next Page</a></h4>
+<h4 align=center><a href=""  onclick="create_json()">Next Page</a></h4>
 
 
 
