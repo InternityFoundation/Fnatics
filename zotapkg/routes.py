@@ -32,3 +32,9 @@ def register():
 def skillquiz():
     ques = Question.query.all()
     return render_template('skillquiz.html', title='Skill Quiz', questions=ques)
+
+
+@app.route("/admin")
+def admindashboard():
+    users = User.query.all()
+    return render_template('dashboard.html', title="Admin Dashboard", users=users)

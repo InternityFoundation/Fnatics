@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="text-center mt-4 animated bounceInDown">
+  <h2>{{ title }}</h2>
+  <hr>
+</div>
+
+<style type="text/css">
+  body
+  {
+      counter-reset: Serial;           /* Set the Serial counter to 0 */
+  }
+
+  table{
+      font-size: 13px;
+      border-collapse: separate;
+  }
+
+  tr td:first-child:before
+  {
+    counter-increment: Serial;      /* Increment the Serial counter */
+    content: counter(Serial); /* Display the counter */
+  }
+</style>
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Whatsapp</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Marital Status</th>
+      <th scope="col">Language Known</th>
+      <th scope="col">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in users %}
+    <tr>
+      <td scope="row"></td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.whatsapp_num }}</td>
+      <td>{{ user.gender }}</td>
+      <td>{{ user.marital_status }}</td>
+      <td>{{ user.lang_known}}</td>
+      <td>{{ user.city }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
