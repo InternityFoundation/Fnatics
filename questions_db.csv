@@ -1,0 +1,32 @@
+Question,a,b,c,d,Correct,Level,Skill
+What is Machine learning?,The autonomous acquisition of knowledge through the use of computer programs,The autonomous acquisition of knowledge through the use of manual programs,The selective acquisition of knowledge through the use of computer programs,The selective acquisition of knowledge through the use of manual programs,a,1,Machine Learning questions
+Which of the factors affect the performance of learner system does not include?,Representation scheme used,Training scenario,Type of feedback,Good data structures,d,1,Machine Learning questions
+Which of the following sentence is FALSE regarding regression?,It relates inputs to outputs.,It is used for prediction.,It may be used for interpretation.,It discovers causal relationships.,d,1,Machine Learning questions
+Which of the following is a widely used and effective machine learning algorithm based on the idea of bagging?,Decision Tree,Regression,Classification,Random Forest  ,d,2,Machine Learning questions
+"To find the minimum or the maximum of a function, we set the gradient to zero because:",The value of the gradient at extrema of a function is always zero,Depends on the type of problem,Both a  and b,None of the above ,a,2,Machine Learning questions
+How do you handle missing or corrupted data in a dataset?,Drop missing rows or columns,Replace missing values with mean/median/mode, Assign a unique category to missing values,All of the above ,d,2,Machine Learning questions
+What is pca.components_ in Sklearn?,Set of all eigen vectors for the projection space ,Matrix of principal components,Result of the multiplication matrix,None of the above options ,a,3,Machine Learning questions
+"You run gradient descent for 15 iterations with a=0.3 and compute J(theta) after each iteration. You find that the value of J(Theta) decreases quickly and then levels off. Based on this, which of the following conclusions seems most plausible?","Rather than using the current value of a, use a larger value of a (say a=1.0)","Rather than using the current value of a, use a smaller value of a (say a=0.1)",a=0.3 is an effective choice of learning rate ,None of the above ,c,3,Machine Learning questions
+ Suppose you have trained a logistic regression classifier and it outputs a new example x with a prediction ho(x) = 0.2. This means,Our estimate for P(y=1 | x),Our estimate for P(y=0 | x) ,"
+Our estimate for P(y=1 | x)
+",Our estimate for P(y=0 | x),b,3,Machine Learning questions
+What is output for − min(''hello world''),e,a blank space character,w,None of the above.,b,1,Python questions
+Suppose we are given with two sets(s1&s2) then what is the output of the code − S1 + S2,Adds the elements of the both the sets.,Removes the repeating elements and adds both the sets.,It is an illegal command.,Output will be stored in S1.,c,1,Python questions
+"What is output for − b = [11,13,15,17,19,21]  ptint(b[::2])","[19,21]","[11,15]","[11,15,19]","
+ [13,17,21]",c,1,Python questions
+Which of the following is more accurate for the following declaration? x = Circle(),Now you can assign int value to x.,x contains a reference to a Circle object.,x actually contains an object of type Circle.,x contains an int value. ,b,2,Python questions
+We can create an image in canvas. Select the option to do so?,Image = PhotoImage(imagefilename),Canvas.create_image(filename),Image = Photoimage(file=imagefilename),Image = Photoimage(imagefilename) ,c,2,Python questions
+Select the correct code to create a button under a parent window with command processButton,Button(set.text= ''Hello'' ),"Button(window ,text= ''Ok'' ,fg= ''black '')","Button(window ,text= ''Hello'' ,command=processButton)","Button(text= ''hello'' ,command=processButton) ",c,2,Python questions
+"What will be the output of the following Python code snippet?  print('The sum of {0:b} and {1:x} is {2:o}'.format(2, 10, 12))",The sum of 2 and 10 is 12,The sum of 10 and a is 14,The sum of 10 and a is c,Error ,b,3,Python questions
+"To find the decimal value of 1111, that is 15, we can use the function:","int(1111,10)","int(‘1111’,10)","int(1111,2)","int(‘1111’,2)  ",d,3,Python questions
+What is the maximum possible length of an identifier?,32 characters,63 characters,79 characters,31 characters,d,3,Python questions
+Which of the following is not a Java features?,Dynamic,Architecture Neutral,Use of pointers,Object-oriented ,c,1,Java questions
+Which is used to find and fix bugs in the Java programs.,JVM,JRE,JDK,JDB,d,1,Java questions
+Which of the following for loop declaration is not valid?,for ( int i = 99; i >= 0; i / 9 ),for ( int i = 7; i <= 77; i += 7 ), for ( int i = 20; i >= 2; - -i ),for ( int i = 2; i <= 20; i = 2* i ),a,1,Java questions
+Which of the following option leads to the portability and security of Java?,Bytecode is executed by JVM,The applet makes the Java code secure and portable,Use of exception handling,Dynamic binding between objects,a,2,Java questions
+"Evaluate the following Java expression, if x=3, y=5, and z=10:  ++z + y - y + z + x++",24,23,20,25,a,2,Java questions
+The \u0021 article referred to as a,"
+a. Unicode escape sequence",Octal escape,Hexadecimal,Line feed ,a,2,Java questions
+Which package contains the Random class?,java.util package,java.lang package,java.awt package,java.io package,a,3,Java questions
+Which of the following is an immediate subclass of the Panel class?,Applet class,Window class,Frame class,Dialog class,a,3,Java questions
+What is the use of the intern() method?,It returns the existing string from memory,It creates a new string in the database,It modifies the existing string in the database,None of the above,a,3,Java questions
